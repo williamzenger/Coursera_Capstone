@@ -10,6 +10,10 @@
   As we can see, there are about six hundread results so he's confused and don't know how to choose. So here is the question: **how can we decide which one is the most appropriate apartment?** Meanwhile, to increase the standard of living, we need to consider that if there are any restaurants, hospitals and schools, etc nearby as well. And I'll call these as *'features'* in this report.
 
 
+#### II. 	Data Collection
+  1.	Data Prepration
+
+
 #### III. 	Methodology
   1. Methodology section which represents the main component of the report where you discuss and describe any exploratory data analysis that you did, any inferential statistical testing that you performed, and what machine learnings were used and why.
 
