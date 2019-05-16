@@ -1,0 +1,67 @@
+I. 		Introduction
+
+A. Description & Background information
+
+Wuxi City is a new first-tier city of China which located in the northeast of Shanghai. One of my friend wants to buy an apartment and has much interest in Wuxi. Because not only the price of housing is much lower than in Shanghai but also it only takes about 30 mins to Shanghai via the high speed train(we're both working in Shanghai). Since then, I looked through one of the most big real estate website: Beike to check out how many options we have. 
+
+Add descriptionNo alt text provided for this image
+As we can see, there are more than six hundred results so he's confused and don't know what to do. So here is the question: 
+
+How can we decide which one is the most appropriate to his need? 
+
+Apart from the price per square of the apartment, to increase the standard of living, we need to consider that if there are any restaurants, hospitals and schools, etc nearby as well. And I'll call these factors as 'features' in the following .
+
+B. Feasibility Analysis
+
+It's easy to use some Python libraries such as BeautifulSoup and Requests to crawl each apartment from our target site to construct the fundamental data of this project.
+Foursquare API is very to use. However in China, I'll choose to use Baidu API instead to get more suitable local features. 
+A lot of people like us I think have the same question: where should I buy a house/apartment in cityname to live a life? So let's give a shot through this project.
+
+
+II. 	Data Collection
+
+		A.	Data Preparation
+
+I'll use python libraries like Beautiful and Requests to crawl our data from BeiKe and then import them with 'Name', 'Address', 'Price' columns into Pandas DataFrame.
+Instead of FourSquare, I'll use Baidu 'Place API' to obtain the Latitude and Longitude information for each apartment and Baidu API 'Place Suggestion API' to obtain the venues nearby.	
+After some searching information online, I can get the following features combination: 'Parks, Supermarkets, Restaurants, Schools, Hospitals, Public, Transportation, Banks(ATM), Theaters'  which will be shown in the map search request url: 'query=公园$超市$美食$学校$医院$公交车站$银行$电影院' in the report.
+		B.   Data Processing
+
+Remove useless columns and rows with prices are too small because some houses are selling not by the price per square.
+Calculate the average price(mean) and assign it to some apartments with unknown prices.
+Data collection respondents and missing data 
+
+
+III. 	Methodology
+
+Methodology section which represents the main component of the report where you discuss and describe any exploratory data analysis that you did, any inferential statistical testing that you performed, and what machine learnings were used and why.
+
+		A. Summaries of the results of data collection and analysis
+
+		B. Response to evaluation questions (where feasible)
+
+		C. Comparison of findings to targets (where feasible and appropriate)
+
+
+
+IV		Results section where you discuss the results.
+
+V. 		Discussion section where you discuss any observations you noted and any recommendations you can make based on the results.
+
+VI.		Conclusions
+
+        A. Summary of Key Findings
+
+		B. Final Analysis
+
+			 How does the author understand the data
+
+			 How does the author believe the data will impact the program
+
+			 Strengths and weaknesses of the program as revealed by evaluation findings
+
+		C. Action Steps/Recommendations B what will be done with the report, what could/or should
+
+		be done with the program
+
+		D. Issues for Further Consideration (any outstanding issues raised by the evaluation) 
